@@ -8,8 +8,8 @@ export default function CharacterList({ characters }) {
     <ul aria-label="character-list">
       {characters.map((character) => (
         <li key={character.id}>
-          <Link to="`/${character.id}`">
-            <Character {...character} />
+          <Link key={character.id} to={`${character.id}`}>
+            <Character name={character.name} image={character.image} />
           </Link>
         </li>
       ))}
@@ -20,7 +20,7 @@ export default function CharacterList({ characters }) {
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
     })
