@@ -11,7 +11,6 @@ const HeyArnoldDetail = () => {
   const { id } = useParams();
   const [character, setCharacter] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(id);
 
   useEffect(() => {
     fetchOneCharacter(id)
