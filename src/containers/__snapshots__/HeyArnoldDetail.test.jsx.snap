@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list displays one hey arnold characters 1`] = `
+<figure
+  aria-label="figure"
+>
+  <img
+    alt="image of Nancy"
+    src="https://vignette.wikia.nocookie.net/heyarnold/images/6/62/Nancy.jpg/revision/latest/scale-to-width-down/310?cb=20110423055923"
+  />
+  <figcaption>
+    Nancy
+  </figcaption>
+</figure>
+`;

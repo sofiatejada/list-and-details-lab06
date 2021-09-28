@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function Character({ name, image }) {
   return (
-    <figure>
+    <figure aria-label="figure">
       <img src={image} alt={`image of ${name}`} />
       <figcaption>
         {name}
