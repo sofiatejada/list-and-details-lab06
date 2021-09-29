@@ -10,8 +10,10 @@ describe('list', () => {
         <HeyArnoldList />
       </MemoryRouter>
     );
-
+    
+    screen.getAllByAltText('loading gif');
     const list = await screen.findByLabelText('character-list');
+    screen.debug();
     expect(list).toMatchSnapshot();
   });
 });
